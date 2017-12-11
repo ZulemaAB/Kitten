@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Marko One', serif;
+}
+
+body{
+  background:#FFFF66;
+
+}
+
+header{
+  margin: 10px 0;
+  background: pink;
+
+}
+header h1{
+  text-align: center;
+  padding: 10px;
+
+}
+
+.container{
+  width :100%;
+  margin: 0 auto;
+  /*overflow: hidden;*/
+}
+
+
+/*posicionando las imagenes*/
+.picture1 {
+  position: relative;
+
+}
+.picture2{
+  position: relative;
+
+}
+.picture3{
+  position: relative;
+
+}
+
+
+
+
+/*-------estilos a nuestros fondos para gatitos-----*/
+.fond-1{
+  width: 70%;
+}
+.fond-2{
+  width: 72%;
+ height: 700px;
+}
+.fond-3{
+  width: 85%;
+}
+
+/*----estilos a nuestros gatitos-----*/
+.cat1{
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  left:150px;
+  bottom: 20px;
+
+}
+.cat2{
+  width: 37%;
+  height: 70%;
+  position: absolute;
+  left:200px;
+  bottom: 20px;
+
+}
+.cat3{
+  width:37%;
+  height: 40%;
+  position: absolute;
+  left:330px;
+  bottom: 145px;
+}
+.large {
+  display: none;
+ }
+
+ .small {
+  display: none;
+ }
+
+ .medium {
+  display: inline-block;
+ }
+/*----------Creando variaciones------*/
+@media(max-width: 480px){
+  .picture1 {
+    position: relative;
+
+  }
+  .large {
+    display: none;
+   }
+
+   .small {
+    display: none;
+   }
+
+   .medium {
+    display: inline-block;
+   }
+  }
+  @media (min-width: 480px) and ( max-width: 780px){
+    .picture1 {
+      position: relative;
+
+    }
+    .large {
+      display: none;
+     }
+
+     .small {
+      display: inline-block;
+     }
+
+     .medium {
+      display: none;
+     }
+    }
+  @media (min-width: 1200px) {
+
+.cat2{
+   width: 37%;
+   height: 70%;
+   position: absolute;
+   left:200px;
+   bottom: 20px;
+  }
+.large{
+
+  display: inline-block;
+}
+
+.small {
+  display:none;
+}
+
+.medium {
+  display: none;
+}
+}
